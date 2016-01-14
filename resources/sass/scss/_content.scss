@@ -1,0 +1,350 @@
+/* -------------------------------
+   :: Mobile Styles
+------------------------------- */
+.page--content, .page--content2 {
+  .main--content, .bewertung{
+    font-family: $font-style;
+    width: 100%;
+    line-height: 21px;
+    padding: 10px 0;
+    font-size: 14px;
+    background-color: $pink-main;
+
+    .p--content, .bewertung--content {
+      margin: 0 auto;
+
+      h1 {
+        line-height: 25px;
+        font-size: 21px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        text-align: center;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+  .bewertung{
+    background-color: $white;
+    margin-bottom: 20px;
+
+
+    .bewertung--content{
+      p {
+        display: block;
+      }
+
+      h2{
+        line-height: 21px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $pink-menu;
+        text-align: left;
+        margin-bottom: 10px;
+        border-bottom: 3px solid $pink-menu;
+      }
+
+      .steps{
+        float: left;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .kunden--bewert, .kateg--text {
+        float: left;
+
+        p {
+          color: $text-color;
+          text-align: center;
+
+          i {
+            color: #bedbe1;
+            font-size: 19px;
+            margin: 5px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $pink-menu;
+        }
+
+        .bewert--content{
+          width: 98%;
+          float: left;
+
+        }
+
+        .bewert--details {
+          display: block;
+          margin-top: 5px;
+
+          .picture {
+           display: none;
+          }
+
+          .bew--name {
+            width: 100%;
+            float: left;
+            margin-left: 7px;
+            font-size: 21px;
+            font-weight: 700;
+            text-align: center;
+            color: #bedbe1;
+            margin-top: 15px;
+
+            span {
+              color: $pink-menu;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .kateg--text {
+        margin-top: 10px;
+
+        p {
+          text-align: justify;
+        }
+
+        a {
+          text-decoration: none;
+          color: $pink-menu;
+        }
+      }
+
+    }
+  }
+
+
+}
+
+.page--content2 {
+
+
+  .main--content{
+    background-color: $white;
+    width: 100%;
+
+    .block1, .block2 {
+      float: left;
+      margin-top: 10px;
+
+      h2 {
+        line-height: 21px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $pink-menu;
+        text-align: left;
+        margin-bottom: 10px;
+        border-bottom: 3px solid $pink-menu;
+
+        a {
+          text-decoration: none;
+          color: $pink-menu;
+        }
+      }
+
+      img {
+        width: 100%;
+        border: 1px dashed $pink-menu;
+        height: auto;
+      }
+    }
+
+    .block2 {
+      width: 100%;
+      float: left;
+
+      p {
+        display: block;
+        text-align: justify;
+        color: $text-color;
+
+        a {
+          text-decoration: none;
+          color: $pink-main;
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+/* -------------------------------
+   :: Desktop Styles
+------------------------------- */
+
+@media only screen and (min-width: 1000px) {
+.page--content, .page--content2 {
+  width: 100%;
+  float: left;
+
+  .main--content, .bewertung{
+    font-family: $font-style;
+    width: $full-width;
+    line-height: 21px;
+    padding: 25px 0;
+    font-size: 14px;
+    background-color: $pink-main;
+
+    .p--content, .bewertung--content {
+      width: $width;
+      margin: 0 auto;
+
+      h1 {
+        line-height: 31px;
+        font-size: 31px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      p {
+        display: block;
+        color: $white;
+        text-align: justify;
+      }
+    }
+
+  }
+  .bewertung{
+    background-color: $white;
+    margin-bottom: 20px;
+
+
+    .bewertung--content{
+
+
+      h2{
+        line-height: 31px;
+        font-size: 19px;
+      }
+
+      .steps{
+        width: 35.912698412698413%;
+        float: left;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .kunden--bewert, .kateg--text {
+        float: left;
+        margin-left: 10px;
+        width: 63.09523809523809%;
+
+        .bewert--content{
+          width: 47.64150943396226415%;
+          float: left;
+          margin-left: 10px;
+        }
+
+        .bewert--details {
+          display: block;
+          margin-top: 5px;
+
+          .picture {
+            /*width: 30%;
+           overflow: hidden;
+           border-radius: 50%;*/
+            display: block;
+            width: 75px;
+            height: 75px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid $pink-menu;
+            float: left;
+            margin-left: 20px;
+
+            img {
+              width: 150px;
+
+            }
+          }
+
+          .bew--name {
+            width: 180px;
+            float: left;
+            margin-left: 7px;
+            font-size: 21px;
+            font-weight: 700;
+            text-align: center;
+            color: #bedbe1;
+            margin-top: 15px;
+
+            span {
+              color: $pink-menu;
+              font-size: 14px;
+            }
+          }
+
+          }
+      }
+
+
+    }
+  }
+
+
+}
+
+
+  .page--content2 {
+
+    .main--content {
+      background-color: $white;
+
+      .block1, .block2 {
+        width: 35.912698412698413%;
+        float: left;
+        margin-left: 10px;
+        margin-top: 0;
+
+        h2 {
+          line-height: 21px;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $pink-menu;
+          text-align: left;
+          margin-bottom: 10px;
+          border-bottom: 3px solid $pink-menu;
+        }
+
+        img {
+          width: 362px;
+          border: 1px dashed $pink-menu;
+        }
+      }
+
+      .block2 {
+        margin-left: 0;
+        width: 63.09523809523809%;
+        float: left;
+
+        p {
+          display: block;
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+}
+

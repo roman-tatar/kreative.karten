@@ -1,0 +1,19 @@
+# IDE files
+.idea/
+.sass-cache/
+*.log
+*.zip
+*.iml
+*.map
+*.css
+.sass-cache
+
+.editorconfig
+nbproject
+
+# Folders
+/node_modules
+/bower_components
+/nbproject/private/
+
+

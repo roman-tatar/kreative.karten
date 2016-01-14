@@ -1,0 +1,10 @@
+{
+  "name": "Familymoments",
+  "version": "1.0.0",
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "jquery": "*",
+    "bxslider-4": "~4.2.5"
+  },
+  "devDependencies": {}
+}

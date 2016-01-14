@@ -1,0 +1,79 @@
+### To get started with TEN project you will need to follow further steps: ###
+
+1. Install 'Git Bash' (Download: http://git-scm.com/downloads)
+
+2. Acces your workspace and clone project from GIT by writing following command in 'Git Bash' (make sure you have an account)
+   git clone git@gitlab.smartsoft.ro:ten/ten.git
+
+
+To start using this package with all dependencies you will need:
+
+1. Make shure you have 'nodejs' installed
+   Check version: In git bash write $ node -v
+   Installation:  If you do not have 'nodejs' installed you can download and install it from here: https://nodejs.org/download/
+   Version:       Our current version  of 'nodejs' is v0.12.2
+
+
+2. Make shure you have 'ruby' installed
+   Check version: In git bash write $ ruby -v
+   Installation:  http://railsinstaller.org/en
+   Version: Our   current version of 'ruby' is ruby 2.1.5p273 (2014-11-13 revision 48405) [i386-mingw32]
+
+3. Make sure you have Sass installed
+   Check version: In git bash write $ sass -v
+   Installation:  Open CMD from Ruby (not GIT BASH!!!) and execute: gem install sass
+   Version:       Our current version of Sass 3.2.19 (Media Mark)
+
+4. Make sure you have Bower installed
+   Check version In 'Git Bash' write $ bower -v
+   Installation: In git bash write $ npm install -g bower (Run Git from the Windows Command Prompt)
+   Version:      Our current version of bower is 1.4.1
+
+
+We are using Grunt for 4 main reasons:
+1. SASS are compiled
+2. All CSS files are concatinated and minified in one file
+3. All JavaScripts are concatinated and minified in one file
+4. Bower dependencies are automatically downloaded
+
+If everything is installed acces ROOT project folder and run following command in git bash
+
+1. npm install // after this command the project should already work as expected
+
+---- if something goes wrong with grunt ------
+2. npm install grunt-cli -g //install the grunt if not exists
+
+Following scripts run automatically after npm install:
+1. bower install   // install all project dependencies
+2. buildcss        // compiles and build SCSS files
+3. grunt watch     // watch our .css and .js files for any changes
+
+Only for UI !!!
+grunt wiredep // add dependencies to index.html after some bower install (.css in HEADER and .js in FOOTER)
+              // you must add at the beginning of each path  "<?php echo home_url(); ?>/"
+
+
+If you get following Error ECMDERR:
+
+howto fix bower ECMDERR in git bash:
+git config --global url."https://".insteadOf git://
+
+######################### Database Connection ###############################
+
+1. In MySQL create database with name DB_NAME - 'ten'
+                                      DB_USER - 'root'
+                                      DB_PASSWORD - '' /no password
+
+2. acces root folder > _db and import ten.sql to newly created database
+
+3. go to root folder > wp > wp-config.php and check if connection information is correct
+
+######################### Database Connection ###############################
+
+
+
+
+
+
+
+
